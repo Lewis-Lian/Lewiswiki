@@ -13,14 +13,15 @@ export default hopeTheme({
 
   logo: "/wiki.png",
 
-  repo: "lewis615",
+  repo: "Lewis-Lian/Lewiswiki",
 
   docsDir: "src",
   
+
   //关闭github仓库链接
   //repoDisplay: false,
   //关闭编辑此页面
-  editLink: false,
+  //editLink: false,
   
   // 导航栏
   navbar,
@@ -126,13 +127,32 @@ export default hopeTheme({
     // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
     comment: {
       provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
+      repo: "Lewis-Lian/Lewiswiki",
+      repoId: "R_kgDON9B70w",
       category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
+      categoryId: "DIC_kwDON9B7084CnKrr",
       //关闭评论
-      comment: false,
+      //comment: false,
     },
+      //公告设置
+      notice: [
+        {
+          path: "/",
+          title: "公告",
+          content: "网站正在建设中..请期待",
+          //记住用户点击了关闭按钮
+          showOnce: true,
+          //按钮设置
+          //actions: [
+          //  {
+          //    text: "Primary Action",
+          //    link: "https://theme-hope.vuejs.press/",
+          //    type: "primary",
+          //  },
+          //  { text: "Default Action" },
+          //],
+        },
+      ],  
 
     components: {
       components: ["Badge", "VPCard"],
