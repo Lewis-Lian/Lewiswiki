@@ -2,11 +2,15 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-      {
-        text: "学习笔记",
-        icon: "material-symbols:book",
-        children: ["/Studynotes/java/","/Studynotes/python/","/Studynotes/git/","/Studynotes/github/", "/demo/"],
-      },
+  "/Studynotes/java/",
+  "/Studynotes/python/",
+  "/Studynotes/git/",
+  "/Studynotes/github/",
+   //   {
+   //     text: "学习笔记",
+   //     icon: "material-symbols:book",
+   //     children: ["/Studynotes/java/","/Studynotes/python/","/Studynotes/git/","/Studynotes/github/", "/demo/"],
+   //   },
   //{
   //  text: "指南",
   //  icon: "lightbulb",

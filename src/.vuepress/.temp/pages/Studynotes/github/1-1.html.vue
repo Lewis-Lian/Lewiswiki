@@ -88,6 +88,37 @@ Git 迅速成为最流行的分布式版本控制系统，尤其是 <em><strong>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre v-pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>git config --global user.email “git邮箱”</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="@source/Studynotes/github/assets/20250221_133616_13.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>截止到这里的操作，已经完成本地 Git 与远程的 Github 绑定，这意味着我们已经可以通过 Git 向 GitHub 提交代码啦！</p>
+<h2 id="使用git将代码提交到github" tabindex="-1"><a class="header-anchor" href="#使用git将代码提交到github"><span>使用Git将代码提交到GitHub</span></a></h2>
+<blockquote>
+<p>该过程需要使用经常的接触的两个 Git 命令，包括：<strong><code v-pre>push</code><strong>和</strong> <code v-pre>pull</code></strong></p>
+</blockquote>
+<p>**<code v-pre>push</code>：**该单词直译过来就是 “推” 的意思，如果我们本地的代码有了更新，为了保持本地与远程的代码同步，我们就需要把本地的代码推到远程的仓库，代码示例：</p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre v-pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>git push origin master</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><strong><code v-pre>pull</code></strong> ：该单词直译过来就是 “拉” 的意思，如果我们远程仓库的代码有了更新，同样为了保持本地与远程的代码同步，我们就需要把远程的代码拉到本地，代码示例：</p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre v-pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>git pull origin master</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="克隆仓库" tabindex="-1"><a class="header-anchor" href="#克隆仓库"><span><strong>克隆仓库</strong></span></a></h3>
+<p>将我们的库克隆下来到本地电脑中，方便以后进行上传代码。</p>
+<figure><img src="@source/Studynotes/github/assets/20250221_134114_14.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>点进仓库之后点击 Code，点击 ssh 会看到一串网址（http也可以），这个地址就是代码地址，git clone 命令会用的到。</p>
+<figure><img src="@source/Studynotes/github/assets/20250221_134239_15.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>接下来我们就开始选择文件存储地方了，在本地电脑中找到存储文件的地方，然后右键选择 Git Bash Here</p>
+<p>在终端输入 git clone 地址（这个地址就是刚刚库那个Code的上代码地址）</p>
+<p>该过程有时候可能会需要输入 Github 账号密码啥的，记得不要输错啦！</p>
+<figure><img src="@source/Studynotes/github/assets/20250221_134845_16.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>如下图所示，指定目录已经存在了我们的库文件</p>
+<figure><img src="@source/Studynotes/github/assets/20250221_134931_17.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<h3 id="上传代码" tabindex="-1"><a class="header-anchor" href="#上传代码"><span>上传代码</span></a></h3>
+<p>打开这个文件夹，然后在其中创建一个任意格式，任意名称的文件（这里新建了一个测试文件）。</p>
+<figure><img src="@source/Studynotes/github/assets/20250221_135054_18.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>在这个文件夹里面右键<code v-pre>git bash</code>进终端输入</p>
+<p><code v-pre>git add</code>我们新增的文件</p>
+<figure><img src="@source/Studynotes/github/assets/20250221_135348_19.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>之后输入然后<code v-pre>git commit -m &quot;测试是否成功&quot;</code>引号内的内容可以随意改动，这个语句的意思是 给你刚刚上传的文件一个备注，方便查找记忆而已；</p>
+<figure><img src="@source/Studynotes/github/assets/20250221_135558_20.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>接着输入 push 指令 git push origin main，如下图所示就代表成功了；</p>
+<figure><img src="@source/Studynotes/github/assets/20250221_135655_21.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<p>打开 GitHub，看到刚刚上传的文件，显示成功。</p>
+<figure><img src="@source/Studynotes/github/assets/20250221_135810_22.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 </div></template>
 
 

@@ -47,7 +47,7 @@ type: primary
 <ul>
 <li>text: GitHub<br>
 icon: mdi:github<br>
-link: <a href="https://github.com/lewis615" target="_blank" rel="noopener noreferrer">https://github.com/lewis615</a></li>
+link: <a href="https://github.com/lewis-Lian" target="_blank" rel="noopener noreferrer">https://github.com/lewis-Lian</a></li>
 </ul>
 <ul>
 <li><a href="https://theme-hope.vuejs.press/zh/guide/markdown/content/include.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
