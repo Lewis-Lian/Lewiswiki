@@ -1,5 +1,5 @@
 ---
-title: 第一章
+title: 基础知识
 index: false
 icon: lucide:folder
 dirorder: 1
