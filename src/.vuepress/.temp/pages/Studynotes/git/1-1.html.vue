@@ -72,7 +72,7 @@ git for windows里只有windows系统的安装包<br>
 <p>一般情况下默认即可</p>
 <figure><img src="@source/Studynotes/git/assets/20250219_081947_10.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>翻译如下：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre v-pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>use the OpenSSL library </span></span>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>use the OpenSSL library </span></span>
 <span class="line"><span>Server certificates will be validated using the ca-bundle. crt file.</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>使用 OpenSSL 库</span></span>
@@ -94,7 +94,7 @@ git for windows里只有windows系统的安装包<br>
 <h3 id="配置行尾符号转换" tabindex="-1"><a class="header-anchor" href="#配置行尾符号转换"><span>配置行尾符号转换</span></a></h3>
 <figure><img src="@source/Studynotes/git/assets/20250219_082317_11.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>翻译如下：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre v-pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>Checkout Windows-style, commit Unix-style line endings </span></span>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>Checkout Windows-style, commit Unix-style line endings </span></span>
 <span class="line"><span>Git will convert LF to CRLF when checking out text files. </span></span>
 <span class="line"><span>When committing text files, CRLF will be converted to LF. For cross-platform projects, this is the recommended setting on Windows("core. autocrif"is set to "true").</span></span>
 <span class="line"><span>签出 Windows 样式，提交 Unix 样式的行结尾</span></span>
@@ -132,7 +132,7 @@ Windows 的是 Carriage Return+ Line Feed（回车+换行），用 “\r\n” �
 这还用问吗？<code v-pre>我们现在的教程就是介绍怎么安装 Windows 版 Git，肯定选第一项啦。</code></p>
 <h3 id="配置终端模拟器以与-git-bash-一起使用" tabindex="-1"><a class="header-anchor" href="#配置终端模拟器以与-git-bash-一起使用"><span>配置终端模拟器以与 Git Bash 一起使用</span></a></h3>
 <figure><img src="@source/Studynotes/git/assets/20250219_083148_12.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre v-pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>Use MinTTY(the default terminal of MSYS2)</span></span>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>Use MinTTY(the default terminal of MSYS2)</span></span>
 <span class="line"><span>Git Bash will use MinTTY as terminal emulator, which sports a resizable window</span></span>
 <span class="line"><span>non-rectangular selections and a Unicode font.Windows console programs(such</span></span>
 <span class="line"><span>as interactive Python) must be launched via 'winpty' to work in MinTTY.</span></span>
@@ -153,7 +153,7 @@ Windows 的是 Carriage Return+ Line Feed（回车+换行），用 “\r\n” �
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code v-pre>建议选择第一种</code>，MinTTY功能比 cmd 多，cmd 只不过 比 MinTTY 更适合处理 Windows 的一些接口问题，这个对 Git 用处不大，除此之外 Windows 的默认控制台窗口（cmd）有很多劣势，比如 cmd 具有非常有限的默认历史记录回滚堆栈和糟糕的字体编码等等。<br>
 相比之下，MinTTY 具有可调整大小的窗口和其他有用的可配置选项，可以通过右键单击的工具栏来打开它们</p>
 <h3 id="选择默认的-git-pull-行为" tabindex="-1"><a class="header-anchor" href="#选择默认的-git-pull-行为"><span>选择默认的 “git pull” 行为</span></a></h3>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre v-pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>ODefault(fast-forward or merge)</span></span>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>ODefault(fast-forward or merge)</span></span>
 <span class="line"><span>This is the standard behavior ofgit pull": fast-forward the current branch to</span></span>
 <span class="line"><span>the fetched branch when possible, otherwise create a merge commit.</span></span>
 <span class="line"><span>默认（快进或合并）</span></span>
@@ -181,7 +181,7 @@ git pull 就是获取最新的远程仓库分支到本地，并与本地分支�
 <figure><img src="@source/Studynotes/git/assets/20250219_091021_15.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>一般默认选项即可</p>
 <p>翻译如下：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre v-pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>Git Credential Manager </span></span>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>Git Credential Manager </span></span>
 <span class="line"><span>Use the cross-platform Git Credential Manager.</span></span>
 <span class="line"><span>See more information about the future of Git Credential Manager here.</span></span>
 <span class="line"><span>Git 凭证管理</span></span>
@@ -199,7 +199,7 @@ git pull 就是获取最新的远程仓库分支到本地，并与本地分支�
 <figure><img src="@source/Studynotes/git/assets/20250219_091619_16.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>一般情况下默认即可</p>
 <p>翻译如下：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre v-pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>Enable file system caching</span></span>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-"><span class="line"><span>Enable file system caching</span></span>
 <span class="line"><span>File system data will be read in bulk and cached in memory for certain operations("core.fscache" is set to "true").</span></span>
 <span class="line"><span>This provides a significant performance boost.</span></span>
 <span class="line"><span>启用文件系统缓存</span></span>

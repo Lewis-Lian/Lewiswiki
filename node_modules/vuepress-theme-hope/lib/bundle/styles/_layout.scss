@@ -6,6 +6,10 @@
   @media (prefers-reduced-motion: no-preference) {
     scroll-behavior: smooth;
   }
+
+  @media (min-width: 1920px) {
+    --content-width: var(--wide-content-width);
+  }
 }
 
 ::-webkit-scrollbar {
